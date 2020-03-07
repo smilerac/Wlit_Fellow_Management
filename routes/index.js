@@ -8,6 +8,28 @@ router.get('/', function (req, res, next) {
 router.get('/addfellow', function(req, res, next) {
   res.render('form');
 });
+router.get('/session', function(req, res, next) {
+  res.render('session');
+});
+
+// router.post("/addfellow",upload, function (req, res) {
+
+//   var story = new Story
+//     ({
+//       username:req.body.username,
+  
+//       useremail:req.body.useremail,
+
+//       description: req.body.description,
+    
+     
+//       imagename :imageFile
+//     })
+//   var promise = story.save()
+//   // promise.then((story) => {
+//   //   res.redirect('/storyview')
+//   // })
+// });
 
 router.get('')
 

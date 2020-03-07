@@ -1,11 +1,48 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      </style>
+      <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+  
+
+
+
+
+<body>
+  <table>
+    <tr>
+        <th>No.</th>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Remarks</th>
+      
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Maria Anders</td>
+      <td>2.2.2020</td>
+      <button type="button">Feedback</button>
+    </tr>
+   
+  </table>
+</body>
+
 </html>

@@ -7,12 +7,6 @@ router.get('/', function (req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/addfellow', function (req, res, next) {
-  //Movies.find().exec(function(err,movies){
-  res.render('addfellow')
-  //})
-
-});
 
 router.post('/addfellow', function (req, res, next) {
   console.log(req.body)
@@ -31,12 +25,16 @@ router.post('/addfellow', function (req, res, next) {
 
 });
 
-router.get('/addfellow', function (req, res, next) {
-  res.render('form');
-});
 router.get('/session', function (req, res, next) {
   res.render('session');
 });
+router.get('/feedback', function (req, res, next) {
+  res.render('feedback');
+});
+router.post('/feedback', function (req, res, next) {
+  res.render('/');
+});
+
 
 // router.post("/addfellow",upload, function (req, res) {
 
@@ -57,6 +55,5 @@ router.get('/session', function (req, res, next) {
 //   // })
 // });
 
-// router.get('')
 
 module.exports = router;

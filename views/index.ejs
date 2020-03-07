@@ -1,27 +1,29 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <style>
-      table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-      }
-      
-      td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-      
-      tr:nth-child(even) {
-        background-color: #dddddd;
-      }
-      </style>
-      <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  
+
+<head>
+  <title><%= title %></title>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
 
 
 
@@ -29,20 +31,31 @@
 <body>
   <table>
     <tr>
-        <th>No.</th>
+      <th>No.</th>
       <th>Title</th>
       <th>Date</th>
       <th>Remarks</th>
-      
+
     </tr>
     <tr>
       <td>1</td>
-      <td>Maria Anders</td>
+      <td>Agile Development</td>
       <td>2.2.2020</td>
-      <button type="button">Feedback</button>
+      <td> <button type="button"><a href="/feedback">Feedback</button></td>
+
     </tr>
-   
+    <tr>
+      <td>2</td>
+      <td>Web dev with Flutter</td>
+      <td>2.2.2020</td>
+      <td> <button type="button"><a href="/feedback">Feedback</button></td>
+
+    </tr>
+
   </table>
+
+  <button type="button"><a href="/session">Session</button>
+  <button type="button"><a href="/addfellow">Fellow</button>
 </body>
 
 </html>

@@ -11,6 +11,13 @@ router.get('/addfellow', function(req, res, next) {
 router.get('/session', function(req, res, next) {
   res.render('session');
 });
+router.get('/feedback', function(req, res, next) {
+  res.render('feedback');
+});
+router.post('/feedback', function(req, res, next) {
+  res.render ('/');
+});
+
 
 // router.post("/addfellow",upload, function (req, res) {
 
